@@ -12,7 +12,7 @@ This website highlights my skills, projects, and professional experience as a de
 
 ## 🛠️ Tech Stack
 - **Frontend**: React.js, Tailwind CSS, MagicUI Components
-- **Hosting**: Vercel (or your hosting service)
+- **Hosting**: Vercel
 
 ## 📂 Sections
 - **Home** – Quick introduction & call-to-action.

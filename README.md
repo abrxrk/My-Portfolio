@@ -1,47 +1,42 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+# Portfolio Website
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+A personal portfolio website built using the [MagicUI Portfolio Template](https://magicui.design/docs/templates/portfolio).  
+This website highlights my skills, projects, and professional experience as a developer.
 
-# Features
+## 🚀 Features
+- **Responsive Design** – Works seamlessly on all devices.
+- **Modern UI** – Clean, minimal, and professional look using MagicUI components.
+- **Customizable Sections** – About, Projects, Skills, and Contact form.
+- **Performance Optimized** – Fast loading and SEO-friendly.
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## 🛠️ Tech Stack
+- **Frontend**: React.js, Tailwind CSS, MagicUI Components
+- **Hosting**: Vercel (or your hosting service)
 
-# Getting Started Locally
+## 📂 Sections
+- **Home** – Quick introduction & call-to-action.
+- **About** – Professional summary and skills.
+- **Projects** – Featured personal and collaborative projects.
+- **Contact** – Easy way to connect.
 
-1. Clone this repository to your local machine:
+## 🌐 Live Demo
+[**Visit Portfolio**](https://your-portfolio-link.com)
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+## 📦 Installation & Setup
+```bash
+# Clone this repository
+git clone https://github.com/your-username/your-repo-name.git
 
-2. Move to the cloned directory
+# Navigate to the folder
+cd your-repo-name
 
-   ```bash
-   cd portfolio
-   ```
+# Install dependencies
+npm install
 
-3. Install dependencies:
+# Start development server
+npm run dev
+```
 
-   ```bash
-   pnpm install
-   ```
-
-4. Start the local Server:
-
-   ```bash
-   pnpm dev
-   ```
-
-5. Open the [Config file](./src/data/resume.tsx) and make changes
-
-# License
-
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+## 🤝 Contributing
+This repository is based on the MagicUI template. Feel free to fork and customize it to make it your own.

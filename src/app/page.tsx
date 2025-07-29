@@ -39,6 +39,23 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="resume">
+        <BlurFade delay={BLUR_FADE_DELAY * 2}>
+          <div className="flex items-center gap-4 mb-4">
+            <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+              Resume
+            </div>
+            <Link
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-8 px-3"
+            >
+              View PDF
+            </Link>
+          </div>
+        </BlurFade>
+      </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>

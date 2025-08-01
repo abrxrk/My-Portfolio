@@ -58,6 +58,13 @@ export const DATA = {
 
         navbar: true,
       },
+      "TUF+": {
+        name: "TakeUForward+",
+        url: "https://takeuforward.org/plus/profile/abrxrk",
+        icon: Icons.tuf,
+
+        navbar: true,
+      },
     },
   },
 

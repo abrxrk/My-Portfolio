@@ -1,3 +1,5 @@
+"use client";
+
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -5,13 +7,23 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { useState } from "react";
 
 const BLUR_FADE_DELAY = 0.04;
+const INITIAL_PROJECTS_COUNT = 3;
 
 export default function Page() {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
+  const displayedProjects = showAllProjects
+    ? DATA.projects
+    : DATA.projects.slice(0, INITIAL_PROJECTS_COUNT);
+
+  const shouldShowViewMore = DATA.projects.length > INITIAL_PROJECTS_COUNT;
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -121,7 +133,7 @@ export default function Page() {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
+            {displayedProjects.map((project, id) => (
               <BlurFade key={project.title} inView={true}>
                 <ProjectCard
                   href={project.href}
@@ -136,6 +148,18 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+          {shouldShowViewMore && (
+            <BlurFade inView={true}>
+              <div className="flex justify-center mt-8">
+                <button
+                  onClick={() => setShowAllProjects(!showAllProjects)}
+                  className="inline-flex items-center rounded-md border px-2 py-1 text-sm font-semibold transition-colors focus:outline-none border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80"
+                >
+                  {showAllProjects ? "View Less" : "View More"}
+                </button>
+              </div>
+            </BlurFade>
+          )}
         </div>
       </section>
       <section id="hackathons">

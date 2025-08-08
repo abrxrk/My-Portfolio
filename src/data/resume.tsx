@@ -136,6 +136,31 @@ export const DATA = {
       video: "",
     },
     {
+      title: "WatchWise",
+      href: "https://github.com/abrxrk/WatchWise",
+      dates: "August 2025",
+      active: true,
+      description:
+        "WatchWise is a Chrome extension that analyzes viewing history from Netflix, Prime Video, and Hotstar to deliver personalized AI-powered recommendations using Google's Gemini AI with a modern glassmorphism UI.",
+      technologies: [
+        "React.js",
+        "Vite",
+        "Tailwind CSS",
+        "Chrome APIs",
+        "Google Gemini API",
+        "Manifest V3",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abrxrk/WatchWise",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
       title: "SkillScore.AI",
       href: "https://skillscore-ai.streamlit.app/",
       dates: "2024",

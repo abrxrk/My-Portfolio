@@ -190,7 +190,7 @@ export const DATA = {
       dates: "August 2025",
       location: "Pune, India",
       description:
-        "Built Medscope AI – an AI-Powered Medical Insight Web App. Developed a full-stack frontend using Next.js to support upload and AI-based analysis of MRI scans, chest X-rays, and blood test PDFs, with interactive visualizations and plain-language insights. Integrated Google OAuth authentication for secure user login, enabling personalized dashboards and future doctor feedback features.",
+        "Built Medscope AI, a full-stack medical insight platform using React (frontend) and FastAPI (backend) that converts 2D MRI and X-ray scans into interactive 3D visualizations, alongside AI-powered analysis of medical images and blood test reports with plain-language explanations. Secured Top 10 placement among 300+ teams",
       win: "Finalist",
       image: "", // Add hackathon image if you have one
       links: [

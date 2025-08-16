@@ -190,7 +190,7 @@ export const DATA = {
       dates: "August 2025",
       location: "Pune, India",
       description:
-        "Built Medscope AI, a full-stack medical insight platform using React (frontend) and FastAPI (backend) that converts 2D MRI and X-ray scans into interactive 3D visualizations, alongside AI-powered analysis of medical images and blood test reports with plain-language explanations. Secured Top 10 placement among 300+ teams",
+        "Built Medscope AI, a full-stack medical insight platform using React (frontend) and FastAPI (backend) that converts 2D MRI and X-ray scans into interactive 3D visualizations, alongside AI-powered analysis of medical images and blood test reports with plain-language explanations. Secured Top 10 position among 300+ teams",
       win: "Finalist",
       image: "", // Add hackathon image if you have one
       links: [

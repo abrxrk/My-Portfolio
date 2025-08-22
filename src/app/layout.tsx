@@ -13,17 +13,27 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
+  metadataBase: new URL("https://www.abrarcodes.com"),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: "Abrar Codes",
+    template: `%s | Abrar Codes`,
   },
-  description: DATA.description,
+  description:
+    "My portfolio showcasing full-stack development projects, AI integrations, and more.",
   openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    url: DATA.url,
-    siteName: `${DATA.name}`,
+    title: "Abrar Codes",
+    description:
+      "My portfolio showcasing full-stack development projects, AI integrations, and more.",
+    url: "https://www.abrarcodes.com",
+    siteName: "Abrar Codes",
+    images: [
+      {
+        url: "https://www.abrarcodes.com/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Abrar Codes - Portfolio Preview",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
@@ -39,8 +49,11 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: "Abrar Codes",
+    description:
+      "My portfolio showcasing full-stack development projects, AI integrations, and more.",
     card: "summary_large_image",
+    images: ["https://www.abrarcodes.com/preview.png"],
   },
   verification: {
     google: "",

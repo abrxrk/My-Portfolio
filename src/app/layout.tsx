@@ -12,19 +12,8 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-// Dynamic metadata that works with multiple domains
-const getBaseUrl = () => {
-  if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}`;
-  }
-  if (process.env.NODE_ENV === "production") {
-    return "https://www.abrarcodes.com";
-  }
-  return "http://localhost:3000";
-};
-
 export const metadata: Metadata = {
-  metadataBase: new URL(getBaseUrl()),
+  metadataBase: new URL("https://www.abrarcodes.com"),
   title: {
     default: "Abrar Codes",
     template: `%s | Abrar Codes`,
@@ -35,10 +24,11 @@ export const metadata: Metadata = {
     title: "Abrar Codes",
     description:
       "My portfolio showcasing full-stack development projects, AI integrations, and more.",
+    url: "https://www.abrarcodes.com",
     siteName: "Abrar Codes",
     images: [
       {
-        url: "/preview.png",
+        url: "https://www.abrarcodes.com/preview.png",
         width: 1200,
         height: 630,
         alt: "Abrar Codes - Portfolio Preview",
@@ -63,7 +53,7 @@ export const metadata: Metadata = {
     description:
       "My portfolio showcasing full-stack development projects, AI integrations, and more.",
     card: "summary_large_image",
-    images: ["/preview.png"],
+    images: ["https://www.abrarcodes.com/preview.png"],
   },
   verification: {
     google: "",

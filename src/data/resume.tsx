@@ -16,7 +16,7 @@ export const DATA = {
     "Java",
     "JavaScript",
     "SQL",
-    "React.js",
+    "React",
     "Next.js",
     "FastAPI",
     "Flask",
@@ -89,7 +89,7 @@ export const DATA = {
       active: true,
       description:
         "PaisaFlow is a modern full-stack web application designed to help users take control of their financial health. It provides tools to monitor spending, manage budgets, track goals, and gain personalized insights from an AI-powered chatbot.",
-      technologies: ["React.js", "Tailwind CSS", "Appwrite", "Render"],
+      technologies: ["React", "Tailwind CSS", "Appwrite", "Render"],
       links: [
         {
           type: "Website",
@@ -143,7 +143,7 @@ export const DATA = {
       description:
         "WatchWise is a Chrome extension that analyzes viewing history from Netflix, Prime Video, and Hotstar to deliver personalized AI-powered recommendations using Google's Gemini AI with a modern glassmorphism UI.",
       technologies: [
-        "React.js",
+        "React",
         "Vite",
         "Tailwind CSS",
         "Chrome APIs",

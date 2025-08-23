@@ -15,15 +15,22 @@ import { useState } from "react";
 
 const BLUR_FADE_DELAY = 0.04;
 const INITIAL_PROJECTS_COUNT = 3;
+const INITIAL_HACKATHONS_COUNT = 2;
 
 export default function Page() {
   const [showAllProjects, setShowAllProjects] = useState(false);
+  const [showAllHackathons, setShowAllHackathons] = useState(false);
 
   const displayedProjects = showAllProjects
     ? DATA.projects
     : DATA.projects.slice(0, INITIAL_PROJECTS_COUNT);
 
+  const displayedHackathons = showAllHackathons
+    ? DATA.hackathons
+    : DATA.hackathons.slice(0, INITIAL_HACKATHONS_COUNT);
+
   const shouldShowViewMore = DATA.projects.length > INITIAL_PROJECTS_COUNT;
+  const shouldShowHackathonsViewMore = DATA.hackathons.length > INITIAL_HACKATHONS_COUNT;
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -78,12 +85,32 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="education">
+      <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade inView={true}>
             <h2 className="text-xl font-bold">
-              Cool place I&apos;m studying at-
+              Companies I&apos;ve Been Part Of-
             </h2>
+          </BlurFade>
+          {DATA.work.map((work, id) => (
+            <BlurFade key={work.company} inView={true}>
+              <ResumeCard
+                href={work.href}
+                logoUrl={work.logoUrl}
+                altText={work.company}
+                title={work.company}
+                subtitle={work.title}
+                period={`${work.start} - ${work.end}`}
+                description={work.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+      <section id="education">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade inView={true}>
+            <h2 className="text-xl font-bold">Education-</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade key={education.school} inView={true}>
@@ -125,7 +152,9 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve been actively engaged in a few side projects lately, exploring diverse technologies & ideas. Here&apos;s a quick glimpse of my ongoing and completed projects.
+                  I&apos;ve been actively engaged in a few side projects lately,
+                  exploring diverse technologies & ideas. Here&apos;s a quick
+                  glimpse of my ongoing and completed projects.
                 </p>
               </div>
             </div>
@@ -184,7 +213,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade inView={true}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
+              {displayedHackathons.map((project, id) => (
                 <BlurFade key={project.title + project.dates} inView={true}>
                   <HackathonCard
                     title={project.title}
@@ -198,6 +227,18 @@ export default function Page() {
               ))}
             </ul>
           </BlurFade>
+          {shouldShowHackathonsViewMore && (
+            <BlurFade inView={true}>
+              <div className="flex justify-center mt-8">
+                <button
+                  onClick={() => setShowAllHackathons(!showAllHackathons)}
+                  className="inline-flex items-center rounded-md border px-2 py-1 text-sm font-semibold transition-colors focus:outline-none border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80"
+                >
+                  {showAllHackathons ? "View Less" : "View More"}
+                </button>
+              </div>
+            </BlurFade>
+          )}
         </div>
       </section>
       <section id="contact">

@@ -69,7 +69,17 @@ export const DATA = {
   },
 
   work: [
-    // Add your work experience here if you have any
+    {
+      company: "Eastri",
+      href: "https://eastri.in",
+      badges: [],
+      location: "Remote",
+      title: "Software Engineering Intern",
+      logoUrl: "/eastri_logo.jpeg",
+      start: "August 2025",
+      end: "Present",
+      description: "Transforming how India irons, one line of code at a time.",
+    },
   ],
   education: [
     {

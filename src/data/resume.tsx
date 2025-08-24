@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/navi+mumbai",
   description: "Software Developer. I like to build software products.",
   summary:
-    "I am a passionate software developer who enjoys creating innovative solutions and building software products. I have experience in full-stack development, AI/ML integration, and data visualization. I love participating in hackathons and working on projects that solve real-world problems.",
+    "A passionate technologist focused on building innovative software and learning new technologies.",
   avatarUrl: "/abrar.jpeg", // Replace with your profile image
   skills: [
     "Python",

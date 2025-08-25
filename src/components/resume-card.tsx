@@ -75,7 +75,8 @@ export const ResumeCard = ({
                 )}
                 <ChevronRightIcon
                   className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
+                    "size-4 translate-x-0 transform transition-all duration-300 ease-out group-hover:translate-x-1",
+                    description ? "opacity-100" : "opacity-0 group-hover:opacity-100",
                     isExpanded ? "rotate-90" : "rotate-0"
                   )}
                 />

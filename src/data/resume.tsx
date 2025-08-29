@@ -19,6 +19,7 @@ export const DATA = {
     "Express",
     "REST API",
     "Python",
+    "C++",
     "Java",
     "FastAPI",
     "MongoDB",

@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    optimizeCss: true,
-  },
   // Optimize font loading
   webpack: (config) => {
     config.resolve.fallback = {

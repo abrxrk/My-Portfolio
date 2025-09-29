@@ -10,7 +10,6 @@ import { Analytics } from "@vercel/analytics/next";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-  display: "swap",
 });
 
 export const metadata: Metadata = {

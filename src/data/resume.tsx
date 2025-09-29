@@ -31,7 +31,11 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    {
+      href: "https://abrarhub.bearblog.dev/",
+      icon: NotebookIcon,
+      label: "Blog",
+    },
     { href: "/resume.pdf", icon: FileTextIcon, label: "Resume" },
   ],
   contact: {

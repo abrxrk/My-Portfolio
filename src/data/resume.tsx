@@ -32,7 +32,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     {
-      href: "https://abrarhub.bearblog.dev/",
+      href: "https://abrxrk.hashnode.dev/",
       icon: NotebookIcon,
       label: "Blog",
     },

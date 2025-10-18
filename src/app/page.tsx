@@ -1,6 +1,5 @@
 "use client";
 
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -15,22 +14,15 @@ import { useState } from "react";
 
 const BLUR_FADE_DELAY = 0.04;
 const INITIAL_PROJECTS_COUNT = 3;
-const INITIAL_HACKATHONS_COUNT = 2;
 
 export default function Page() {
   const [showAllProjects, setShowAllProjects] = useState(false);
-  const [showAllHackathons, setShowAllHackathons] = useState(false);
 
   const displayedProjects = showAllProjects
     ? DATA.projects
     : DATA.projects.slice(0, INITIAL_PROJECTS_COUNT);
 
-  const displayedHackathons = showAllHackathons
-    ? DATA.hackathons
-    : DATA.hackathons.slice(0, INITIAL_HACKATHONS_COUNT);
-
   const shouldShowViewMore = DATA.projects.length > INITIAL_PROJECTS_COUNT;
-  const shouldShowHackathonsViewMore = DATA.hackathons.length > INITIAL_HACKATHONS_COUNT;
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -151,11 +143,6 @@ export default function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Check out my latest work
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve been actively engaged in a few side projects lately,
-                  exploring diverse technologies & ideas. Here&apos;s a quick
-                  glimpse of my ongoing and completed projects.
-                </p>
               </div>
             </div>
           </BlurFade>
@@ -183,58 +170,6 @@ export default function Page() {
                   className="inline-flex items-center rounded-md border px-2 py-1 text-sm font-semibold transition-colors focus:outline-none border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80"
                 >
                   {showAllProjects ? "View Less" : "View More"}
-                </button>
-              </div>
-            </BlurFade>
-          )}
-        </div>
-      </section>
-      <section id="hackathons">
-        <div className="space-y-12 w-full py-12">
-          <BlurFade inView={true}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-flex items-center rounded-md border px-3 py-1 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80">
-                  Hackathons
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
-                </p>
-              </div>
-            </div>
-          </BlurFade>
-          <BlurFade inView={true}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {displayedHackathons.map((project, id) => (
-                <BlurFade key={project.title + project.dates} inView={true}>
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
-          </BlurFade>
-          {shouldShowHackathonsViewMore && (
-            <BlurFade inView={true}>
-              <div className="flex justify-center mt-8">
-                <button
-                  onClick={() => setShowAllHackathons(!showAllHackathons)}
-                  className="inline-flex items-center rounded-md border px-2 py-1 text-sm font-semibold transition-colors focus:outline-none border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80"
-                >
-                  {showAllHackathons ? "View Less" : "View More"}
                 </button>
               </div>
             </BlurFade>

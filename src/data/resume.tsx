@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/navi+mumbai",
   description: "Trust me, I'm a software engineer.",
   summary:
-    "A passionate technologist focused on building innovative software and learning new technologies.",
+    "I break things, learn fast, and love diving deep into code and CS fundamentals.",
   avatarUrl: "/abrar.jpeg", // Replace with your profile image
   skills: [
     "TypeScript",
@@ -20,7 +20,7 @@ export const DATA = {
     "C++",
     "Java",
     "FastAPI",
-    "Framework agnostic ;)"
+    "Framework agnostic ;)",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -68,6 +68,18 @@ export const DATA = {
 
   work: [
     {
+      company: "PlaytPlus",
+      href: "https://playtplus.com",
+      badges: [],
+      location: "Remote",
+      title: "Frontend Engineer Intern",
+      logoUrl: "/PlaytPlus.png",
+      start: "November 2025",
+      end: "Ongoing",
+      description:
+        "Merging code and creativity to redefine how the world plays.",
+    },
+    {
       company: "Eastri",
       href: "https://eastri.in",
       badges: [],
@@ -75,7 +87,7 @@ export const DATA = {
       title: "Software Engineering Intern",
       logoUrl: "/eastri_logo.jpeg",
       start: "August 2025",
-      end: "Present",
+      end: "November 2025",
       description: "Transforming how India irons, one line of code at a time.",
     },
   ],
@@ -96,7 +108,7 @@ export const DATA = {
       dates: "July 2025",
       active: true,
       description:
-        "PaisaFlow is a modern full-stack web application designed to help users take control of their financial health. It provides tools to monitor spending, manage budgets, track goals, and gain personalized insights from an AI-powered chatbot.",
+        "A full stack finance app that helps users track spending, manage budgets, set goals, and get AI driven financial insights.",
       technologies: ["React", "Tailwind CSS", "Appwrite", "Render"],
       links: [
         {
@@ -119,7 +131,7 @@ export const DATA = {
       dates: "Ongoing",
       active: true,
       description:
-        "AbliHUB is an AI-powered project-based learning platform that helps learners choose a skill, generate a personalized roadmap, build mini-projects, and get instant feedback — all in one place.",
+        "An AI powered platform for personalized, project based learning from skill roadmaps to instant feedback.",
       technologies: [
         "React",
         "Vite",
@@ -149,7 +161,7 @@ export const DATA = {
       dates: "August 2025",
       active: true,
       description:
-        "WatchWise is a Chrome extension that analyzes viewing history from Netflix, Prime Video, and Hotstar to deliver personalized AI-powered recommendations using Google's Gemini AI with a modern glassmorphism UI.",
+        "A Chrome extension that uses AI to analyze your streaming history and deliver smart, personalized show recommendations.",
       technologies: [
         "React",
         "Vite",
@@ -174,7 +186,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "SkillScore.AI is a simple Streamlit web app that allows users to rate their confidence in various tech skills and instantly get a visual analysis of their strengths.",
+        "A Streamlit app that visualizes your tech skill confidence levels to highlight strengths and growth areas.",
       technologies: ["Streamlit", "Python", "Pandas", "Plotly"],
       links: [
         {

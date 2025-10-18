@@ -12,22 +12,15 @@ export const DATA = {
     "A passionate technologist focused on building innovative software and learning new technologies.",
   avatarUrl: "/abrar.jpeg", // Replace with your profile image
   skills: [
-    "JavaScript",
     "TypeScript",
     "React",
     "Next.js",
     "Express",
-    "REST API",
     "Python",
     "C++",
     "Java",
     "FastAPI",
-    "MongoDB",
-    "Git",
-    "Pandas",
-    "NumPy",
-    "Matplotlib",
-    "scikit-learn",
+    "Framework agnostic ;)"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },

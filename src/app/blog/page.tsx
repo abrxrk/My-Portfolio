@@ -22,9 +22,10 @@ export default async function BlogPage() {
               <ExternalLink className="h-4 w-4" />
             </div>
             <p className="text-muted-foreground mb-4">
-              I write about software development, technology insights, and my learning journey. 
-              Check out my latest articles on Hashnode where I share tutorials, project breakdowns, 
-              and thoughts on the tech industry.
+              I write about software development, technology insights, and my
+              learning journey. Check out my latest articles on Hashnode where I
+              share tutorials, project breakdowns, and thoughts on the tech
+              industry.
             </p>
             <a
               href="https://abrxrk.hashnode.dev/"
@@ -36,9 +37,11 @@ export default async function BlogPage() {
               <ExternalLink className="h-4 w-4" />
             </a>
           </div>
-          
+
           <div className="rounded-lg border bg-card p-6 text-card-foreground">
-            <h3 className="text-md font-semibold mb-2">What You&apos;ll Find</h3>
+            <h3 className="text-md font-semibold mb-2">
+              What You&apos;ll Find
+            </h3>
             <ul className="text-muted-foreground space-y-1 text-sm">
               <li>• Software development tutorials and guides</li>
               <li>• Project breakdowns and technical deep-dives</li>

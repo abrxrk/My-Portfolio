@@ -87,7 +87,7 @@ export const DATA = {
       title: "Software Engineering Intern",
       logoUrl: "/eastri_logo.jpeg",
       start: "August 2025",
-      end: "November 2025",
+      end: "October 2025",
       description: "Transforming how India irons, one line of code at a time.",
     },
   ],

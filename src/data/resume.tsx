@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/navi+mumbai",
   description: "Trust me, I'm a software engineer.",
   summary:
-  "I break things, learn fast, and love diving deep into code and CS fundamentals.",
+  "I break things; learn fast; and love diving deep into code and CS fundamentals.",
   avatarUrl: "/abrar.jpeg", // Replace with your profile image
   skills: [
     "TypeScript",

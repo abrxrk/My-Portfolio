@@ -7,7 +7,7 @@ export const DATA = {
   url: "https://github.com/abrxrk",
   location: "Navi Mumbai, India",
   locationLink: "https://www.google.com/maps/place/navi+mumbai",
-  description: "Trust me, I'm a software engineer.",
+  description: "Always trying to center a div.",
   summary:
   "I break things; learn fast; and love diving deep into code and CS fundamentals.",
   avatarUrl: "/abrar.jpeg", // Replace with your profile image

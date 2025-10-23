@@ -107,8 +107,7 @@ export const DATA = {
       href: "https://paisaflow-inxp.onrender.com/",
       dates: "July 2025",
       active: true,
-      description:
-        "A full stack finance app that helps users track spending, manage budgets, set goals, and get AI driven financial insights.",
+      description:"A finance app for tracking spending, managing budgets, setting goals, and providing financial insights." ,
       technologies: ["React", "Tailwind CSS", "Appwrite", "Render"],
       links: [
         {
@@ -131,7 +130,7 @@ export const DATA = {
       dates: "Ongoing",
       active: true,
       description:
-        "An AI powered platform for personalized, project based learning from skill roadmaps to instant feedback.",
+        "A Platform for personalized skill roadmaps & project based learning.",
       technologies: [
         "React",
         "Vite",
@@ -160,8 +159,7 @@ export const DATA = {
       href: "https://github.com/abrxrk/WatchWise",
       dates: "August 2025",
       active: true,
-      description:
-        "A Chrome extension that uses AI to analyze your streaming history and deliver smart, personalized show recommendations.",
+      description:"A Chrome extension for personalized show recommendations.",
       technologies: [
         "React",
         "Vite",
@@ -186,7 +184,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "A Streamlit app that visualizes your tech skill confidence levels to highlight strengths and growth areas.",
+        "App that visualizes your tech skill confidence levels and highlights your strengths .",
       technologies: ["Streamlit", "Python", "Pandas", "Plotly"],
       links: [
         {

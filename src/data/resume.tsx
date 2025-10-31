@@ -7,7 +7,7 @@ export const DATA = {
   url: "https://github.com/abrxrk",
   location: "Navi Mumbai, India",
   locationLink: "https://www.google.com/maps/place/navi+mumbai",
-  description: "Always trying to center a div.",
+  description: "Interested in solving problems in any xyz stack.",
   summary:
   "I break things; learn fast; and love diving deep into code and CS fundamentals.",
   avatarUrl: "/abrar.jpeg", // Replace with your profile image
@@ -184,7 +184,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "App that visualizes your tech skill confidence levels and highlights your strengths .",
+        "App that visualizes your tech skill confidence levels and highlights your strengths.",
       technologies: ["Streamlit", "Python", "Pandas", "Plotly"],
       links: [
         {

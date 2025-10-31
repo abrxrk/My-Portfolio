@@ -141,7 +141,7 @@ export default function Page() {
                   Proof of Work
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  Check out what I&apos;ve been working on
                 </h2>
               </div>
             </div>
